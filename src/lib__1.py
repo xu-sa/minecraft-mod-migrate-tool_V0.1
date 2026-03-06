@@ -83,7 +83,7 @@ class Mc_mod_migration:
                 return ",,,"
             versions = version_res.json()
             if not versions:
-                print(f"Not in game version {mc_version}")
+                print(f"Not in game version {mc_version}/{loader}")
                 return f",,,"
             latest_version = versions[0]
             latest_file = latest_version['files'][0]
